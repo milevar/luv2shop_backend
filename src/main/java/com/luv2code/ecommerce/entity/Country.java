@@ -15,13 +15,13 @@ public class Country {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
+    @Column(name="id")
     private int id;
 
-    @Column(name = "code")
+    @Column(name="code")
     private String code;
 
-    @Column(name = "name")
+    @Column(name="name")
     private String name;
 
     @OneToMany(mappedBy = "country")
@@ -29,3 +29,13 @@ public class Country {
     private List<State> states;
 
 }
+
+
+
+
+
+
+
+
+
+
